@@ -1,5 +1,7 @@
 
 
+import Link from 'next/link';
+
 export const Footer = () => {
   return (
     <footer id="contact" className="bg-slate-50 border-t border-slate-200 pt-20 pb-10">
@@ -14,17 +16,17 @@ export const Footer = () => {
           <div>
             <div className="font-semibold text-slate-900 mb-5 text-sm uppercase tracking-wider">产品</div>
             <ul className="space-y-3 text-slate-600">
-              <li><a href="#products" className="hover:text-blue-600 transition-colors">推理 API</a></li>
-              <li><a href="#products" className="hover:text-blue-600 transition-colors">模型微调</a></li>
+              <li><Link href="/#products" className="hover:text-blue-600 transition-colors">推理 API</Link></li>
+              <li><Link href="/models" className="hover:text-blue-600 transition-colors">模型定价</Link></li>
               <li><a href="#products" className="hover:text-blue-600 transition-colors">私有化部署</a></li>
             </ul>
           </div>
           <div id="docs">
             <div className="font-semibold text-slate-900 mb-5 text-sm uppercase tracking-wider">资源</div>
             <ul className="space-y-3 text-slate-600">
-              <li><a href="#products" className="hover:text-blue-600 transition-colors">平台概览</a></li>
-              <li><a href="#capabilities" className="hover:text-blue-600 transition-colors">安全能力</a></li>
-              <li><a href="#use-cases" className="hover:text-blue-600 transition-colors">应用场景</a></li>
+              <li><Link href="/#products" className="hover:text-blue-600 transition-colors">平台概览</Link></li>
+              <li><Link href="/models" className="hover:text-blue-600 transition-colors">模型目录</Link></li>
+              <li><Link href="/#use-cases" className="hover:text-blue-600 transition-colors">应用场景</Link></li>
             </ul>
           </div>
           <div>

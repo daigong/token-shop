@@ -10,16 +10,17 @@ export const Header = () => {
             AI Infra
           </Link>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-            <a href="#products" className="hover:text-slate-900 transition-colors">产品矩阵</a>
-            <a href="#capabilities" className="hover:text-slate-900 transition-colors">平台能力</a>
-            <a href="#use-cases" className="hover:text-slate-900 transition-colors">应用场景</a>
+            <Link href="/#products" className="hover:text-slate-900 transition-colors">产品矩阵</Link>
+            <Link href="/models" className="hover:text-slate-900 transition-colors">模型定价</Link>
+            <Link href="/#capabilities" className="hover:text-slate-900 transition-colors">平台能力</Link>
+            <Link href="/#use-cases" className="hover:text-slate-900 transition-colors">应用场景</Link>
           </nav>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium">
-          <a href="#contact" className="hidden sm:block text-slate-600 hover:text-slate-900 transition-colors">联系我们</a>
-          <a href="#demo" className="bg-slate-900 text-white px-5 py-2 rounded-md hover:bg-slate-800 transition-colors shadow-sm">
+          <Link href="/#contact" className="hidden sm:block text-slate-600 hover:text-slate-900 transition-colors">联系我们</Link>
+          <Link href="/#demo" className="bg-slate-900 text-white px-5 py-2 rounded-md hover:bg-slate-800 transition-colors shadow-sm">
             预约演示
-          </a>
+          </Link>
         </div>
       </div>
     </header>
